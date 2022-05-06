@@ -3,6 +3,7 @@
     "section-products": {
       "type": "section-products",
       "settings": {
+        "header": "Have you had your daily dose of vit today?"
       }
     },
     "section-testimonials": {
