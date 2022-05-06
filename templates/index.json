@@ -1,18 +1,18 @@
 {
   "sections": {
-    "section-testimonials": {
-      "type": "section-testimonials",
+    "section-products": {
+      "type": "section-products",
       "settings": {
       }
     },
-    "section-products": {
-      "type": "section-products",
+    "section-testimonials": {
+      "type": "section-testimonials",
       "settings": {
       }
     }
   },
   "order": [
-    "section-testimonials",
-    "section-products"
+    "section-products",
+    "section-testimonials"
   ]
 }
