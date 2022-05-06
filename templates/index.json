@@ -2,15 +2,13 @@
   "sections": {
     "section-products": {
       "type": "section-products",
-      "blocks": {},
-      "block_order": [],
-      "settings": {}
+      "settings": {
+      }
     },
     "section-testimonials": {
       "type": "section-testimonials",
-      "blocks": {},
-      "block_order": [],
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [
