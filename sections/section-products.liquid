@@ -11,7 +11,7 @@
 
                     {% for product in collections.frontpage.products %}
                         <div class="swiper-slide">
-                            {% render 'product-card' %}
+                            {% render 'product-card', product: product %}
                         </div>
                     {% endfor %}
 

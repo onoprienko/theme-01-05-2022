@@ -1,0 +1,17 @@
+<div class="product-card__tag">
+    {% case tag %}
+        {% when 'immunity' %}
+            {% render 'ico-immunity' %}
+        {% when 'stress' %}
+            {% render 'ico-stress' %}
+        {% when 'mobility' %}
+            {% render 'ico-mobility' %}
+        {% when 'heart' %}
+            {% render 'ico-heart' %}
+        {% when 'energy' %}
+            {% render 'ico-energy' %}
+        {% when 'brain' %}
+            {% render 'ico-brain' %}
+    {% endcase %}
+    <span>{{ tag }}</span>
+</div>
