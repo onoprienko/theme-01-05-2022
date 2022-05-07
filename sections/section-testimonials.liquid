@@ -8,8 +8,12 @@
                     {% for block in section.blocks %}
                         {% case block.type %}
                             {% when 'slide' %}
-                                <div class="swiper-slide">
-                                    {% render 'testimonial', title: block.settings.title %}
+                                <div class="swiper-slide"> 
+                                    {% render 'testimonial', 
+                                        title: block.settings.title, 
+                                        textdata: block.settings.textdata, 
+                                        name: block.settings.name 
+                                    %} 
                                 </div>
                         {% endcase %}
                     {% endfor %}
@@ -42,7 +46,19 @@
            "id": "title",
            "label": "Title",
            "default": "Walking on Sunshine"
-         }
+         },
+         {
+            "type": "textarea",
+            "id": "textdata",
+            "label": "Text",
+            "default": "“These little softgels have helped boost my mood and keep me in a positive head space during all the chaos of everyone coming back to work since covid. I suffer from anxiety and depression and this has helped”"
+         },
+         {
+            "type": "text",
+            "id": "name",
+            "label": "Name",
+            "default": "Amber"
+          }
        ]
     }
   ],
