@@ -1,9 +1,7 @@
 <section class="section section-products">
     <div class="container">
         <h2 class="section__title h h--2">{{ section.settings.header }}</h2>
-        <p class="section__subtitle p">Whether you need a daily pick-me up or a little sleep support, our products are
-            developed with the end goal in mind. Optimally-dosed, highly bioavailable formulas means you can see and
-            feel results that set you on a path to better health.</p>
+        <p class="section__subtitle p">{{ section.settings.subtitle }}</p>
         <div class="products-wrap">
 
             <div class="swiper mySwiper">
@@ -20,7 +18,7 @@
             <div class="swiper-pagination"></div>
         </div>
         <div class="section-products__btn">
-            <a href="#" class="btn section-products__btn">See All Products</a>
+            <a href="#" class="btn section-products__btn">{{ section.settings.button }}</a>
         </div>
     </div>
 </section>
@@ -31,15 +29,20 @@
   "name": "section-products",
   "settings": [
     {
-      "type": "text",
-      "id": "header",
-      "label": "Header"
-    }
-  ],
-  "default": {
-    "settings": {
-      "header": "Have you had your daily dose of vit today?"
-    }
-  }
+        "type": "text",
+        "id": "header",
+        "label": "Header"
+    },
+    {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Subtitle"
+    },
+    {
+        "type": "text",
+        "id": "button",
+        "label": "Button"
+    },
+  ]
 }
 {% endschema %}
