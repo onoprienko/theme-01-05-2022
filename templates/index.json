@@ -2,15 +2,63 @@
   "sections": {
     "section-products": {
       "type": "section-products",
-      "settings": {}
+      "settings": {
+        "header": "Have you had your daily dose of vit today?",
+        "subtitle": "Whether you need a daily pick-me up or a little sleep support, our products are developed with the end goal in mind. Optimally-dosed, highly bioavailable formulas means you can see and feel results that set you on a path to better health.1",
+        "buttontext": "See All Products"
+      }
     },
     "section-testimonials": {
       "type": "section-testimonials",
-      "settings": {}
+      "blocks": {
+        "1483b505-9593-4da0-a4f7-22c5d2d4fd24": {
+          "type": "slide",
+          "settings": {
+            "title": "Walking on Sunshine",
+            "textdata": "“These little softgels have helped boost my mood and keep me in a positive head space during all the chaos of everyone coming back to work since covid. I suffer from anxiety and depression and this has helped”",
+            "name": "Amber"
+          }
+        }
+      },
+      "block_order": [
+        "1483b505-9593-4da0-a4f7-22c5d2d4fd24"
+      ],
+      "settings": {
+        "header": ""
+      }
+    },
+    "16519279798b1c0268": {
+      "type": "section-testimonials",
+      "blocks": {
+        "165192797910de737d-0": {
+          "type": "slide",
+          "settings": {
+            "title": "Walking on Sunshine",
+            "textdata": "“These little softgels have helped boost my mood and keep me in a positive head space during all the chaos of everyone coming back to work since covid. I suffer from anxiety and depression and this has helped”",
+            "name": "Amber"
+          }
+        },
+        "165192797910de737d-1": {
+          "type": "slide",
+          "settings": {
+            "title": "Walking on Sunshine",
+            "textdata": "“These little softgels have helped boost my mood and keep me in a positive head space during all the chaos of everyone coming back to work since covid. I suffer from anxiety and depression and this has helped”",
+            "name": "Amber"
+          }
+        }
+      },
+      "block_order": [
+        "165192797910de737d-0",
+        "165192797910de737d-1"
+      ],
+      "settings": {
+        "header": "Slideshow"
+      }
     }
   },
   "order": [
     "section-products",
-    "section-testimonials"
+    "section-testimonials",
+    "16519279798b1c0268"
   ]
 }
