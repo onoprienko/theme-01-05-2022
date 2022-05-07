@@ -1,26 +1,53 @@
 {
   "sections": {
     "section-products": {
-      "type": "section-products"
+      "type": "section-products",
+      "settings": {
+        "header": "Have you had your daily dose of vit today?",
+        "subtitle": "Whether you need a daily pick-me up or a little sleep support, our products are developed with the end goal in mind. Optimally-dosed, highly bioavailable formulas means you can see and feel results that set you on a path to better health.1",
+        "buttontext": "See All Products"
+      }
     },
     "section-testimonials": {
       "type": "section-testimonials",
       "blocks": {
         "slide1": {
-          "type": "slide"
+          "type": "slide",
+          "settings": {
+            "title": "Walking on Sunshine",
+            "textdata": "“These little softgels have helped boost my mood and keep me in a positive head space during all the chaos of everyone coming back to work since covid. I suffer from anxiety and depression and this has helped”",
+            "name": "Amber",
+            "image": "shopify:\/\/shop_images\/testimonial.jpg",
+            "product": "cloud-nine"
+          }
         },
         "slide2": {
-          "type": "slide"
+          "type": "slide",
+          "settings": {
+            "title": "Walking on Sunshine",
+            "textdata": "“These little softgels have helped boost my mood and keep me in a positive head space during all the chaos of everyone coming back to work since covid. I suffer from anxiety and depression and this has helped”",
+            "name": "Amber",
+            "product": ""
+          }
         },
         "slide3": {
-          "type": "slide"
+          "type": "slide",
+          "settings": {
+            "title": "Walking on Sunshine",
+            "textdata": "“These little softgels have helped boost my mood and keep me in a positive head space during all the chaos of everyone coming back to work since covid. I suffer from anxiety and depression and this has helped”",
+            "name": "Amber",
+            "product": ""
+          }
         }
       },
       "block_order": [
         "slide1",
         "slide2",
         "slide3"
-      ]
+      ],
+      "settings": {
+        "header": ""
+      }
     }
   },
   "order": [
