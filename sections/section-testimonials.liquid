@@ -28,7 +28,10 @@
 
 {% if request.design_mode %}
   <!-- This will only render in the theme editor -->
-  <script src="{{ 'scripts.min.js' | asset_url }}" defer="defer"></script>
+  <script>
+      console.log("recalc slider");
+  </script>
+  
 {% endif %}
 
 
@@ -64,6 +67,16 @@
             "id": "name",
             "label": "Name",
             "default": "Amber"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Logo image"
+          },
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
           }
        ]
     }
