@@ -3,16 +3,13 @@
         <h2 class="section__title h h--2">{{ section.settings.header }}</h2>
         <p class="section__subtitle p">{{ section.settings.subtitle }}</p>
         <div class="products-wrap">
-
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-
                     {% for product in collections.frontpage.products %}
                         <div class="swiper-slide">
                             {% render 'product-card', product: product %}
                         </div>
                     {% endfor %}
-
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -42,7 +39,7 @@
         "type": "text",
         "id": "button",
         "label": "Button"
-    },
+    }
   ]
 }
 {% endschema %}
