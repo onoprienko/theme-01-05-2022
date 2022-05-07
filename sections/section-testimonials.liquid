@@ -1,21 +1,55 @@
 <section class="section section-testimonials">
     <div class="container">
-        <h2 class="section__title h h--3">Why People Love Us</h2>
+        <h2 class="section__title h h--3">{{ section.settings.header }}</h2>
         <div class="testimonials-wrap">
             <div class="swiper mySwiper2">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        {% render 'testimonial' %}
-                    </div>
-                    <div class="swiper-slide">
-                        {% render 'testimonial' %}
-                    </div>
-                    <div class="swiper-slide">
-                        {% render 'testimonial' %}
-                    </div>
+
+                    {% for block in section.blocks %}
+                        {% case block.type %}
+                            {% when 'slide' %}
+                                <div class="swiper-slide">
+                                    {% render 'testimonial', title: block.settings.title %}
+                                </div>
+                        {% endcase %}
+                    {% endfor %}
+
                 </div>
             </div>
             <div class="swiper-pagination2"></div>
         </div>
     </div>
 </section>
+
+
+{% schema %}
+{
+  "name": "section-products",
+  "settings": [
+    {
+        "type": "text",
+        "id": "header",
+        "label": "Header",
+        "default": "Why People Love Us"
+    }
+  ],
+  "blocks": [
+    {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "text",
+           "id": "title",
+           "label": "Title",
+           "default": "Walking on Sunshine"
+         }
+       ]
+    }
+  ]
+}
+{% endschema %}
+
+
+
+
