@@ -29,8 +29,7 @@
     {
         "type": "text",
         "id": "header",
-        "label": "Header",
-        "default": "Why People Love Us"
+        "label": "Header"
     }
   ],
   "blocks": [
@@ -46,7 +45,20 @@
          }
        ]
     }
-  ]
+  ],
+  "default": {
+    "settings": {
+      "header": "Slideshow"
+    },
+    "blocks": [
+      {
+        "type": "slide"
+      },
+      {
+        "type": "slide"
+      }
+    ]
+  }
 }
 {% endschema %}
 
