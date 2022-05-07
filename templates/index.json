@@ -10,6 +10,37 @@
     },
     "section-testimonials": {
       "type": "section-testimonials",
+      "blocks": {
+        "a8b41d36-1105-46d6-b499-9822f475eb80": {
+          "type": "slide",
+          "settings": {
+            "title": "Walking on Sunshine",
+            "textdata": "“These little softgels have helped boost my mood and keep me in a positive head space during all the chaos of everyone coming back to work since covid. I suffer from anxiety and depression and this has helped”",
+            "name": "Amber"
+          }
+        },
+        "32af58b5-1806-4caf-9715-942384b513f0": {
+          "type": "slide",
+          "settings": {
+            "title": "Walking on Sunshine",
+            "textdata": "“These little softgels have helped boost my mood and keep me in a positive head space during all the chaos of everyone coming back to work since covid. I suffer from anxiety and depression and this has helped”",
+            "name": "Amber"
+          }
+        },
+        "346cae05-1426-4ce0-8b92-7317334a693e": {
+          "type": "slide",
+          "settings": {
+            "title": "Walking on Sunshine",
+            "textdata": "“These little softgels have helped boost my mood and keep me in a positive head space during all the chaos of everyone coming back to work since covid. I suffer from anxiety and depression and this has helped”",
+            "name": "Amber"
+          }
+        }
+      },
+      "block_order": [
+        "a8b41d36-1105-46d6-b499-9822f475eb80",
+        "32af58b5-1806-4caf-9715-942384b513f0",
+        "346cae05-1426-4ce0-8b92-7317334a693e"
+      ],
       "settings": {
         "header": ""
       }
