@@ -12,7 +12,7 @@
     <div class="testimonial__title">{{ title }}</div>
     <p class="testimonial__text">{{ textdata }}</p>
     <div class="testimonial__name">{{ name }}</div>
-    <a href="#" class="testimonial__product">
+    <a href="{{ product.url }}" class="testimonial__product">
         <img class="testimonial__product-img" src="{{ product.images[0] | img_url: '92x70' }}" alt="" width="92px" height="70px">
         <div class="testimonial__product-name">{{ product.title }}</div>
         <span class="testimonial__product-arr">
