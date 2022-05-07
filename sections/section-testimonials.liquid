@@ -26,6 +26,12 @@
 </section>
 
 
+{% if request.design_mode %}
+  <!-- This will only render in the theme editor -->
+  <script src="{{ 'scripts.min.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+
+
 {% schema %}
 {
   "name": "section-testimonials",
