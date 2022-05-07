@@ -1,6 +1,10 @@
 <a href="{{ product.url }}" class="product-card">
     <div class="product-card__img-wrap">
-        <img class="product-card__img" src="{{ product.images[0] | img_url: '540x434' }}" alt="" width="270px" height="217px">
+        <img class="product-card__img lazyload" 
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-src="{{ product.images[0] | img_url: '540x434' }}" 
+            alt="" width="270px" height="217px"
+        >
         <div class="product-card__tags">
             {% for tag in product.tags %}
                 {% render 'tag', tag: tag %}
