@@ -4,22 +4,20 @@
         <div class="testimonials-wrap">
             <div class="swiper mySwiper2">
                 <div class="swiper-wrapper">
-
                     {% for block in section.blocks %}
                         {% case block.type %}
-                            {% when 'slide' %}
-                                <div class="swiper-slide"> 
-                                    {% render 'testimonial', 
-                                        title: block.settings.title, 
-                                        textdata: block.settings.textdata, 
-                                        name: block.settings.name,
-                                        image: block.settings.image,
-                                        product: block.settings.product 
-                                    %} 
-                                </div>
+                        {% when 'slide' %}
+                            <div class="swiper-slide"> 
+                                {% render 'testimonial', 
+                                    title: block.settings.title, 
+                                    textdata: block.settings.textdata, 
+                                    name: block.settings.name,
+                                    image: block.settings.image,
+                                    product: block.settings.product 
+                                %} 
+                            </div>
                         {% endcase %}
                     {% endfor %}
-
                 </div>
             </div>
             <div class="swiper-pagination2"></div>
@@ -30,9 +28,16 @@
 
 {% if request.design_mode %}
   <!-- This will only render in the theme editor -->
-  <script>
-      console.log("recalc slider");
-  </script>
+    <script>
+        console.log("recalc slider");
+        document.addEventListener('shopify:block:select', function(event) {
+            console.log("select");
+        });
+
+        document.addEventListener('shopify:block:deselect', function(event) {
+            console.log("select");
+        });
+    </script>
   
 {% endif %}
 
